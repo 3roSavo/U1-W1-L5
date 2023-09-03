@@ -58,7 +58,7 @@ h6 {
 #header-description {
     text-align: center;
     height: auto;
-    padding:200px 575px;
+    padding: 200px 575px;
 }
 
 #header-description h1 {
@@ -90,128 +90,130 @@ h6 {
     background-color: #b03a25;
 }
 
-/* MAIN ----------------------------------------------*/
+/* MAIN -----------------------ho provato eliminando i div e passando a una table ma il risultato non cambia di molto,
+non riesco proprio a centrare img e testo a destra, ho problemi nel centrare l'altezza e flexbox non era concesso-----------------------*/
 
 article {
-    margin:100px 0px;
+    margin: 100px 0px;
 }
 
 main article {
-    padding-top:15px;
-}
-
-
-main article .main-text-article {
-    margin: 35px 0px;
-    display: inline;
+    padding-top: 15px;
 }
 
 main article p {
     margin: 10px 0px;
-    padding:0px 15px;
+    padding: 0px 15px;
 }
 
-main article #img-main {
-    text-align: center;
-    margin-top:40px;
-    display:inline-block;
-    width:50%;
+#img-td {
+    text-align: right;
+    height: 80%;
+}
+
+td {
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    height: 561px;
 }
 
 #main-text-box {
-    display:inline-block;
-    width:35%;
-    height: 100%;
-    padding:40px 40px 40px 80px;
-    
+    display: inline-block;
+    padding: 40px 40px 55px 80px;
+
 }
 
-main article div img {
-    border-radius:400px;
-    width:500px;
-    margin-left:300px;
+main article td img {
+    border-radius: 400px;
+    width: 500px;
     display: inline-block;
+    padding-top: 0px 20px 0px 20px;
+    vertical-align: bottom;
 }
+
 /* ------------------------------------------------------- */
 main section {
     background-color: #e22d0e;
-    padding:90px;
+    padding: 90px;
     text-align: center;
-    color:white;
-    margin-bottom: 70px;
+    color: white;
+    margin-bottom: 100px;
 }
 
 section h1 {
-    color:white;
+    color: white;
     font-size: 1.8em;
-    margin:30px 0px;
+    margin: 30px 0px;
 }
 
 #comment-section {
     font-style: italic;
-    margin:30px 0px;
+    margin: 30px 0px;
 }
 
 #name-ceo {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
-/* aside -------------------------------------------- */
+/* aside--------------------come soluzione ho inserito le 3 box in una table, impostata width 100% e height 240px alle
+immagini per renderle alte uguali (il problema penso derivasse dal div) infine centrato aside con text-align, margin left 
+e right alla box2 per distanziarla dalle box1 e box3--------------------------- */
 
-
-aside article {
-    display: inline-block;
-    width:25%;
+aside {
     text-align: center;
-    border:1px solid #dee1e3;
+    height:500px;
+}
+
+
+aside td {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dee1e3;
     border-radius: 5px;
+    width: 400px;
 }
 
-aside article img {
-    width:100%;
+aside td img {
+    width: 100%;
+    height:240px;
+
 }
 
-aside article h4 {
-    margin:10px;
+aside td h4 {
+    margin: 10px;
 }
 
-aside article p {
-    margin:0px 15px 40px 15px;
-}
-
-#box1 {
-    margin:0 30px 100px 170px;
+aside td p {
+    margin: 0px 15px 40px 15px;
 }
 
 #box2 {
-    margin:0 30px 0 30px;
+    margin:0 3% 0 3%;
 }
-
-#box3 {
-    margin:0 170px 0 30px;
-}
-
 /* footer ------------------------------------------- */
 
 footer {
-    background-color:#25a2c3;
-    color:#c8e7f0;
-    padding:50px 0px;
+    background-color: #25a2c3;
+    color: #c8e7f0;
+    padding: 50px 0px;
 }
 
 footer a {
-    color:#c8e7f0;
+    color: #c8e7f0;
 }
 
 footer h1 {
-    color:white;
-    font-size:1.8em;
-    padding:30px 0;
-    text-align:center;
+    color: white;
+    font-size: 1.8em;
+    padding: 30px 0;
+    text-align: center;
 }
 
 hr {
-    margin:30px 0px;
+    margin: 30px 0px;
 }
 
 #copyrights {
@@ -220,7 +222,7 @@ hr {
 }
 
 #box-footer {
-    width:300px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
